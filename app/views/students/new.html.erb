@@ -1,0 +1,9 @@
+<h1> Student Form </h1>
+<form action='/students' method='post'>
+<input type ='text' name='student[first_name]' id='student[first_name]'>
+<input type='text' name='student[last_name]' id='student[last_name]'>
+
+<input type='submit' id='Submit Student'>
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+</form>
+<%=params.inspect%>
